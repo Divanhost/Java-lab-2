@@ -1,18 +1,13 @@
 package com.company;
 
-import DataBase.City;
-import com.company.DataProcess.FileManager;
-import com.company.DataProcess.InputProcessor;
 
-import java.util.ArrayList;
+import DataBase.requests.Requests;
 
 public class Main {
 
     public static void main(String[] args) {
-    FileManager fm = new FileManager();
-    String [] input = fm.load();
-        InputProcessor ip = new InputProcessor();
-        ArrayList<City> aaa = ip.process(input);
-        System.out.println(aaa.toString());
+        Requests.load();
+        Requests.report();
+
     }
 }

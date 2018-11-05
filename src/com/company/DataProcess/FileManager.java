@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class FileManager {
     File file;
     public FileManager() {
-        file = new File("D:\\Projects\\Java\\LAb2\\src\\com\\company\\information.txt");
+        file = new File("src\\com\\company\\information.txt");
     }
     public String [] load(){
 
