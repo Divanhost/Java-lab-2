@@ -36,6 +36,10 @@ public class FuelTank {
         return commonAmount;
     }
 
+    public void setCurrentAmount(int currentAmount) {
+        this.currentAmount = currentAmount;
+    }
+
     public FuelKind getFuel() {
         return fuel;
     }
