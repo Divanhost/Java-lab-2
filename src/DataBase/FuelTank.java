@@ -23,6 +23,19 @@ enum   FuelKind{
 }
 
 public class FuelTank {
+
+    FuelKind fuel;
+    int currentAmount;
+    int commonAmount;
+
+    public int getCurrentAmount() {
+        return currentAmount;
+    }
+
+    public int getCommonAmount() {
+        return commonAmount;
+    }
+
     public FuelKind getFuel() {
         return fuel;
     }
@@ -30,10 +43,6 @@ public class FuelTank {
     public void setFuel(FuelKind fuel) {
         this.fuel = fuel;
     }
-
-    FuelKind fuel;
-    int currentAmount;
-    int commonAmount;
 
     public FuelTank(String fuelStr,int a,int c) {
         this.fuel = FuelKind.stringToFuelKind(fuelStr);
