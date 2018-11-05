@@ -44,7 +44,6 @@ public class Requests {
                     System.out.println("\t\t\tТип топлива: " + fT.getFuel());
                     System.out.println("\t\t\tОбщая ёмкость: " + fT.getCommonAmount());
                     System.out.println("\t\t\tТекущий объём топлива: " + fT.getCurrentAmount());
-
                     i++;
                 }
             }
