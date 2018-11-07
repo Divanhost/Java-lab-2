@@ -37,7 +37,7 @@ public class FuelTank {
 
     public FuelTank(String fuelStr,int a,int c) {
         this.fuel = FuelKind.stringToFuelKind(fuelStr);
-        currentAmount=a;
-        commonAmount =c;
+        currentAmount=c;
+        commonAmount =a;
     }
 }

@@ -11,7 +11,7 @@ public class FileManager {
     public FileManager() {
         file = new File("D:\\Projects\\Java\\LAb2\\src\\com\\company\\information.txt");
     }
-    public String [] load(){
+    public List<String> load(){
 
         List<String> strings = new ArrayList<String>();
         Scanner sc;
@@ -36,9 +36,8 @@ public class FileManager {
 
         }
 
-        String[] inputStr = new String[strings.size()];
-        inputStr = strings.toArray(inputStr);
-        return  inputStr;
+        // return List DONE
+        return  strings;
     }
     public void save(String [] output){
 
