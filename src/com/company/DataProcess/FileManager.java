@@ -4,6 +4,7 @@ import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Scanner;
 
 public class FileManager {
@@ -39,13 +40,16 @@ public class FileManager {
         // return List DONE
         return  strings;
     }
-    public void save(String [] output){
+    public void save(List<String> output){
 
         try {
             PrintWriter out = new PrintWriter("information.txt");
-            for(int i =0; i<output.length;i++) {
-                out.println(output[i]);
+            ListIterator<String> iter = output.listIterator();
+
+            while(iter.hasNext()){
+                out.println(iter.next());
             }
+
             out.close();
         }
         catch (FileNotFoundException e) {

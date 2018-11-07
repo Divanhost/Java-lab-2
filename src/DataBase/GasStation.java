@@ -3,6 +3,10 @@ package DataBase;
 import java.util.ArrayList;
 
 public class GasStation {
+    public String getName() {
+        return name;
+    }
+
     private final String name;
 
     public GasStation(String name) {
