@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b50eb08f-efbe-4f7d-ad75-6e1ecd99a233" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LAb2/com/company/DataProcess/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAb2/com/company/DataProcess/FileManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LAb2/com/company/DataProcess/InputProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LAb2/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAb2/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/FuelTank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/FuelTank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/GasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/GasStation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/DataProcess/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DataProcess/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DataProcess/InputProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DataProcess/DataProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,14 +41,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4523" />
+          <entry key="java" value="4540" />
           <entry key="source" value="25" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4523" />
+          <entry key="JAVA" value="4540" />
           <entry key="PLAIN_TEXT" value="46" />
         </counts>
       </usages-collector>
@@ -75,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DataProcess/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="281">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#229#230#0" expanded="true" />
                 <element signature="e#324#325#0" expanded="true" />
@@ -103,9 +96,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataBase/GasStation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state>
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
               <folding>
+                <element signature="e#102#103#0" expanded="true" />
                 <element signature="e#129#130#0" expanded="true" />
               </folding>
             </state>
@@ -146,7 +140,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/information.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -176,13 +170,13 @@
         <option value="$PROJECT_DIR$/src/DataBase/City.java" />
         <option value="$PROJECT_DIR$/src/com/company/DataProcess/BetterCharArray.java" />
         <option value="$PROJECT_DIR$/src/com/company/information.txt" />
-        <option value="$PROJECT_DIR$/src/com/company/DataProcess/FileManager.java" />
         <option value="$PROJECT_DIR$/src/com/company/DataProcess/InputProcessor.java" />
         <option value="$PROJECT_DIR$/src/DataBase/GasStation.java" />
         <option value="$PROJECT_DIR$/src/DataBase/FuelTank.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/information.txt" />
         <option value="$PROJECT_DIR$/src/com/company/DataProcess/DataProcessor.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DataProcess/FileManager.java" />
       </list>
     </option>
   </component>
@@ -246,7 +240,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541621789900" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541622430554" />
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RunDashboard">
@@ -293,8 +287,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -304,7 +299,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,16 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataBase/GasStation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding>
-            <element signature="e#129#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -436,13 +421,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataProcess/FileManager.java">
+    <entry file="file://$PROJECT_DIR$/information.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="true" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataBase/GasStation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#102#103#0" expanded="true" />
+            <element signature="e#129#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -457,10 +449,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/information.txt">
+    <entry file="file://$PROJECT_DIR$/src/com/company/DataProcess/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="true" selection-end-line="20" />
+        <state relative-caret-position="281">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

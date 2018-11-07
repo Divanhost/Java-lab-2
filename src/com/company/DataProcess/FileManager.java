@@ -15,17 +15,12 @@ public class FileManager {
     public List<String> load(){
 
         List<String> strings = new ArrayList<String>();
-        Scanner sc;
 
-        try {
-
-            sc = new Scanner(file);
+        try (Scanner sc = new Scanner(file)){
 
             while (sc.hasNextLine()) {
                 String line = sc.nextLine().trim();
                 strings.add(line);
-
-               // System.out.println(line); //печать строки в стандартный вывод
             }
             sc.close();
 
@@ -36,8 +31,6 @@ public class FileManager {
         finally {
 
         }
-
-        // return List DONE
         return  strings;
     }
     public void save(List<String> output){
