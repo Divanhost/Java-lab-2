@@ -4,9 +4,10 @@ import DataBase.City;
 import DataBase.FuelTank;
 import DataBase.GasStation;
 import com.company.DataProcess.FileManager;
-import com.company.DataProcess.InputProcessor;
+import com.company.DataProcess.DataProcessor;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Requests {
     private Requests() {
@@ -16,14 +17,16 @@ public class Requests {
 
     public  static  void load() {
         FileManager fm = new FileManager();
-        String [] input = fm.load();
-        InputProcessor ip = new InputProcessor();
+        List<String> input= fm.load();
+        DataProcessor ip = new DataProcessor();
         cities = ip.process(input);
         System.out.println("Операция выполнена успешно");
     }
 
     public  static void save() {
-
+        FileManager fm = new FileManager();
+        DataProcessor ip = new DataProcessor();
+        fm.save(ip.getOutputArray(cities));
     }
 
     public  static  void report() {
