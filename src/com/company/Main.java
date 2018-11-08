@@ -4,16 +4,17 @@ import DataBase.City;
 import com.company.DataProcess.FileManager;
 import com.company.DataProcess.DataProcessor;
 
-import java.util.ArrayList;
-import java.util.List;
+import DataBase.requests.Requests;
 
 public class Main {
 
     public static void main(String[] args) {
-    FileManager fm = new FileManager();
-    List<String> input = fm.load();
-        DataProcessor ip = new DataProcessor();
-        ArrayList<City> aaa = ip.process(input);
-        fm.save(ip.getOutputArray(aaa));
+        Requests.load();
+        //Requests.info("Москва");
+        //Requests.info("Москва", "АЗС№1");
+        //Requests.info("Москва", "АЗС№1", "ТЦ№1");
+        //Requests.add("Москва", "АЗС№1", "ТЦ№1", 100);
+        //Requests.report();
+
     }
 }

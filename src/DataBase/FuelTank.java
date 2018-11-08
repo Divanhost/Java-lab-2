@@ -37,6 +37,23 @@ enum   FuelKind{
 }
 
 public class FuelTank {
+
+    FuelKind fuel;
+    int currentAmount;
+    int commonAmount;
+
+    public int getCurrentAmount() {
+        return currentAmount;
+    }
+
+    public int getCommonAmount() {
+        return commonAmount;
+    }
+
+    public void setCurrentAmount(int currentAmount) {
+        this.currentAmount = currentAmount;
+    }
+
     public FuelKind getFuel() {
         return fuel;
     }
