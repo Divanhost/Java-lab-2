@@ -42,7 +42,7 @@ public class Requests {
                     System.out.println("\t\tТЦ№" + i);
                     System.out.println("\t\t\tВ кассе: " + gSt.getCash() + "р");
                     System.out.println("\t\t\tТип топлива: " + fT.getFuel());
-                    System.out.println("\t\t\tОбщая ёмкость: " + fT.getCommonAmount());
+                    System.out.println("\t\t\tОбщая ёмкость: " + fT.getTotalAmount());
                     System.out.println("\t\t\tТекущий объём топлива: " + fT.getCurrentAmount());
                     i++;
                 }
@@ -102,7 +102,7 @@ public class Requests {
 
                             if (fuelTank.equals("ТЦ№" + i)){
                                 System.out.println("Тип топлива: " + fT.getFuel());
-                                System.out.println("Общая ёмкость: " + fT.getCommonAmount());
+                                System.out.println("Общая ёмкость: " + fT.getTotalAmount());
                                 System.out.println("Текущий объём топлива: " + fT.getCurrentAmount());
                                 break;
                             }
@@ -127,17 +127,17 @@ public class Requests {
                 for (GasStation gSt : city.getGasStation()) {
 
                     if (gasSt.equals(gSt.getName())) {
-                        int i = 1;
+                        //int i = 1;
 
                         for (FuelTank fT : gSt.getFuelTank()) {
 
-                            if (fuelTank.equals("ТЦ№" + i)){
+                            if (fuelTank.equals(fT.getName())){
                                 fT.setCurrentAmount(fT.getCurrentAmount() + volume);
                                 System.out.println("Операция выполнена успешно");
                                 break;
                             }
 
-                            i++;
+                            //i++;
                         }
 
                         break;
@@ -162,6 +162,7 @@ public class Requests {
                         for (FuelTank fT : gSt.getFuelTank()) {
 
                             if (fuelTank.equals("ТЦ№" + i)){
+
                                 fT.setCurrentAmount(fT.getCurrentAmount() - volume);
                                 //ДОБАВИТЬ МНОЖИТЕЛЬ ЦЕНЫ
                                 gSt.setCash(gSt.getCash() + volume);

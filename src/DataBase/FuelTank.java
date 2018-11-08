@@ -40,7 +40,7 @@ public class FuelTank {
 
     FuelKind fuel;
     int currentAmount;
-    int commonAmount;
+    int totalAmount;
     String name;
     public String getName() {
         return name;
@@ -49,8 +49,8 @@ public class FuelTank {
         return currentAmount;
     }
 
-    public int getCommonAmount() {
-        return commonAmount;
+    public int getTotalAmount() {
+        return totalAmount;
     }
 
     public void setCurrentAmount(int currentAmount) {
@@ -67,8 +67,8 @@ public class FuelTank {
 
     public FuelTank(String fuelName,String fuelStr,int a,int c) {
         this.fuel = FuelKind.valueOfFK(fuelStr);
-        currentAmount=a;
-        commonAmount =c;
+        currentAmount=c;
+        totalAmount =a;
         name = fuelName;
     }
 }

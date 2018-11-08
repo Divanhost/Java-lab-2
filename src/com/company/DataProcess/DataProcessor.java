@@ -62,7 +62,7 @@ public class DataProcessor {
                 for (FuelTank ft : gs.getFuelTank()){
                     output.add(ft.getName());
                     output.add("Тип топлива: "+ft.getFuel());
-                    output.add("Общая ёмкость: "+ft.getCommonAmount()+"л");
+                    output.add("Общая ёмкость: "+ft.getTotalAmount()+"л");
                     output.add("Текущий объем топлива: "+ft.getCurrentAmount()+"л");
                 }
             }
