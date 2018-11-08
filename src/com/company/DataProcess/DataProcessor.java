@@ -5,19 +5,15 @@ import DataBase.FuelTank;
 import DataBase.GasStation;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.concurrent.ExecutionException;
 
 public class DataProcessor {
     public ArrayList<City> process(List<String> input){
         ArrayList<City> cities = new ArrayList<>();
-        int i =1;
-        String cityName;
-        boolean hasBegin = false;
         try {
             ListIterator<String> iter = input.listIterator();
+
             while (iter.hasNext()) {
                 City city = new City();
                 city.setName(iter.next());
@@ -47,8 +43,6 @@ public class DataProcessor {
                         city.addGasStation(gs);
                     }
                     break;
-//                  if(iter.next().equals("]")) break;
-//                  iter.previous();
               }
               cities.add(city);
             }
@@ -76,6 +70,5 @@ public class DataProcessor {
         }
         return output;
     }
-
 }
 

@@ -1,5 +1,4 @@
 package DataBase;
-import java.io.Serializable;
 enum   FuelKind{
     АИ98, АИ95, АИ92, ДТ, Газ;
 
