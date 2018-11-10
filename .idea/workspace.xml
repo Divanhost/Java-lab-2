@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b50eb08f-efbe-4f7d-ad75-6e1ecd99a233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataBase/requests/Exceptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataBase/requests/Operations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataBase/requests/Processor.java" afterDir="false" />
+    <list default="true" id="b50eb08f-efbe-4f7d-ad75-6e1ecd99a233" name="Default Changelist" comment="Сделал работу с консолью(80проц) и обработку ошибок(79проц), всё ещё жду цен.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/requests/Requests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/requests/Requests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,6 +86,7 @@
     <session id="444650560">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -112,13 +108,20 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="2475" />
-          <entry key="txt" value="68" />
+          <entry key="txt" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2475" />
-          <entry key="PLAIN_TEXT" value="68" />
+          <entry key="PLAIN_TEXT" value="149" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="1" />
+          <entry key="git.branch.compare" value="1" />
+          <entry key="git.branch.rebase" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -161,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DataBase/requests/Exceptions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+            <state relative-caret-position="221">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="method#Exceptions#0;class#Exceptions#0" />
               </folding>
@@ -281,7 +284,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541886231973" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541886476509" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -333,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541873349502</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Сделал работу с консолью(80проц) и обработку ошибок(79проц), всё ещё жду цен.">
+      <created>1541886345417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541886345417</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -350,7 +360,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32740214" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32740214" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,7 +416,8 @@
       <path value="$PROJECT_DIR$/Java-lab2" />
     </ignored-roots>
     <MESSAGE value="Удалил старый проект, скачал зип с мастера распаковал =&gt; PROFIT!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Удалил старый проект, скачал зип с мастера распаковал =&gt; PROFIT!!" />
+    <MESSAGE value="Сделал работу с консолью(80проц) и обработку ошибок(79проц), всё ещё жду цен." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал работу с консолью(80проц) и обработку ошибок(79проц), всё ещё жду цен." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -562,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataBase/requests/Exceptions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+        <state relative-caret-position="221">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="method#Exceptions#0;class#Exceptions#0" />
           </folding>
