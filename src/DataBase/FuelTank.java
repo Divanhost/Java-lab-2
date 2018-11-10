@@ -1,5 +1,4 @@
 package DataBase;
-import java.io.Serializable;
 enum   FuelKind{
     АИ98, АИ95, АИ92, ДТ, Газ;
 
@@ -38,6 +37,26 @@ enum   FuelKind{
 }
 
 public class FuelTank {
+
+    FuelKind fuel;
+    int currentAmount;
+    int totalAmount;
+    String name;
+    public String getName() {
+        return name;
+    }
+    public int getCurrentAmount() {
+        return currentAmount;
+    }
+
+    public int getTotalAmount() {
+        return totalAmount;
+    }
+
+    public void setCurrentAmount(int currentAmount) {
+        this.currentAmount = currentAmount;
+    }
+
     public FuelKind getFuel() {
         return fuel;
     }
@@ -46,28 +65,10 @@ public class FuelTank {
         this.fuel = fuel;
     }
 
-    FuelKind fuel;
-    int currentAmount;
-    int commonAmount;
-
-    public int getCurrentAmount() {
-        return currentAmount;
-    }
-
-    public int getCommonAmount() {
-        return commonAmount;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    String name;
-
-    public FuelTank(String _name,String fuelStr,int a,int c) {
+    public FuelTank(String fuelName,String fuelStr,int a,int c) {
         this.fuel = FuelKind.valueOfFK(fuelStr);
         currentAmount=c;
-        commonAmount =a;
-        name = _name;
+        totalAmount =a;
+        name = fuelName;
     }
 }

@@ -22,8 +22,6 @@ public class FileManager {
                 String line = sc.nextLine().trim();
                 strings.add(line);
             }
-            sc.close();
-
         }
         catch (FileNotFoundException e) {
             e.printStackTrace();

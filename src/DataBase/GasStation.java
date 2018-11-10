@@ -14,10 +14,6 @@ public class GasStation {
         this.name = name;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public ArrayList<FuelTank> getFuelTank() {
         return fuelTank;
     }
