@@ -4,6 +4,7 @@ import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Scanner;
 
 public class FileManager {
@@ -11,20 +12,15 @@ public class FileManager {
     public FileManager() {
         file = new File("src\\com\\company\\information.txt");
     }
-    public String [] load(){
+    public List<String> load(){
 
         List<String> strings = new ArrayList<String>();
-        Scanner sc;
 
-        try {
-
-            sc = new Scanner(file);
+        try (Scanner sc = new Scanner(file)){
 
             while (sc.hasNextLine()) {
                 String line = sc.nextLine().trim();
                 strings.add(line);
-
-               // System.out.println(line); //печать строки в стандартный вывод
             }
             sc.close();
 
@@ -35,18 +31,18 @@ public class FileManager {
         finally {
 
         }
-
-        String[] inputStr = new String[strings.size()];
-        inputStr = strings.toArray(inputStr);
-        return  inputStr;
+        return  strings;
     }
-    public void save(String [] output){
+    public void save(List<String> output){
 
         try {
             PrintWriter out = new PrintWriter("information.txt");
-            for(int i =0; i<output.length;i++) {
-                out.println(output[i]);
+            ListIterator<String> iter = output.listIterator();
+
+            while(iter.hasNext()){
+                out.println(iter.next());
             }
+
             out.close();
         }
         catch (FileNotFoundException e) {
