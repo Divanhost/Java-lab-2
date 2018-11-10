@@ -1,26 +1,21 @@
 package com.company;
 
-import DataBase.City;
-import com.company.DataProcess.FileManager;
-import com.company.DataProcess.DataProcessor;
-
+import DataBase.requests.Processor;
 import DataBase.requests.Requests;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        Requests.load();
-        //Requests.info("Москва");
-       // Requests.info("Москва", "АЗС№1");
-       // Requests.info("Москва", "АЗС№1", "ТЦ№1");
-        Requests.add("Москва", "АЗС№1", "ТЦ№1", 100);
-        Requests.report();
-        Requests.save();
+        boolean isStopped = false;
 
-    }
+        while (!isStopped) {
+            System.out.println("Здравствуйте. Введите вашу команду: \n");
+            Scanner in = new Scanner(System.in);
+            String query = in.nextLine();
 
-    private void  processRequest(String com) {
-        Requests.load();
-
+            if (!query.isEmpty())
+                Processor.processRequest(query);
+        }
     }
 }
