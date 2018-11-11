@@ -15,7 +15,7 @@ public class Requests {
 
     private static ArrayList<City> cities;
 
-    public  static  void load() {
+    public static  void load() {
         FileManager fm = new FileManager();
         List<String> input= fm.load();
         DataProcessor ip = new DataProcessor();
@@ -23,34 +23,38 @@ public class Requests {
         System.out.println("Операция выполнена успешно");
     }
 
-    public  static void save() {
+    public static void save() {
         FileManager fm = new FileManager();
         DataProcessor ip = new DataProcessor();
         fm.save(ip.getOutputArray(cities));
     }
 
-    public  static  void report() {
+    public static  void report() {
 
         for (City city : cities) {
             System.out.println(city.getName());
 
             for (GasStation gSt : city.getGasStation()) {
                 System.out.println("\t" + gSt.getName());
-                int i = 1;
 
                 for (FuelTank fT : gSt.getFuelTank()) {
-                    System.out.println("\t\tТЦ№" + i);
+                    System.out.println("\t\t" + fT.getName());
                     System.out.println("\t\t\tВ кассе: " + gSt.getCash() + "р");
                     System.out.println("\t\t\tТип топлива: " + fT.getFuel());
                     System.out.println("\t\t\tОбщая ёмкость: " + fT.getTotalAmount());
                     System.out.println("\t\t\tТекущий объём топлива: " + fT.getCurrentAmount());
-                    i++;
                 }
             }
         }
     }
 
-    public  static  void info(String town) {
+    public static  void info() {
+        for (City city : cities) {
+            System.out.println(city.getName());
+        }
+    }
+
+    public static  void info(String town) {
         for (City city : cities) {
             if (town.equals(city.getName())) {
                 for (GasStation gSt : city.getGasStation()) {
@@ -62,7 +66,7 @@ public class Requests {
         }
     }
 
-    public  static  void info(String town, String gasSt)
+    public static  void info(String town, String gasSt)
     {
         for (City city : cities) {
 
@@ -88,7 +92,7 @@ public class Requests {
         }
     }
 
-    public  static  void info(String town, String gasSt, String fuelTank) {
+    public static  void info(String town, String gasSt, String fuelTank) {
         for (City city : cities) {
 
             if (town.equals(city.getName())) {
@@ -119,7 +123,11 @@ public class Requests {
         }
     }
 
-    public  static  void  add (String town, String gasSt, String fuelTank, int volume){
+    public static void infoPrices() {
+
+    }
+
+    public static  void  add (String town, String gasSt, String fuelTank, int volume){
         for (City city : cities) {
 
             if (town.equals(city.getName())) {
@@ -149,7 +157,7 @@ public class Requests {
         }
     }
 
-    public  static  void  sell (String town, String gasSt, String fuelTank, int volume){
+    public static  void  sell (String town, String gasSt, String fuelTank, int volume){
         for (City city : cities) {
 
             if (town.equals(city.getName())) {
